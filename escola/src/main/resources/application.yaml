@@ -1,0 +1,21 @@
+server:
+  port: 8083
+  servlet:
+    context-path: '/api-usuario/'
+
+spring:
+  application:
+    name: api-escola
+  datasource:
+    url: jdbc:postgresql://localhost:5432/clean_architecture
+    username: postgres
+    password: vini4222
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
